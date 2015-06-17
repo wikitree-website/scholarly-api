@@ -1,28 +1,32 @@
 # Scholarly API
 
 
-There's (roughly) 3 major Wikipedia API endpoints that we use for Wikitree. I've mocked up example request/response code for each one in the attached files:
-1. `article.js` - fetch an article
-2. `suggest.js` -  fetch title suggestions
-3. `search.js` - fetch full search results
+*Please note all the naming is rough/imaginary, things will need adjusting to match database realities*
 
 
-Also, there's another endpoint I though might help us: a list of fields. This way we could generate a legend, as well as give the app a central reference for looking up field colors:
-4. `fields.js` - fetch all fields and their corresponding colors
+There's (roughly) 3 major Wikipedia API endpoints used in Wikitree. Our scholarly API could also follow this pattern. Mock requests & responses are in the attached files.
+
+- `article.js` - fetch an article
+- `suggest.js` -  fetch title suggestions
+- `search.js` - fetch full search results
 
 
-*Please note all the naming is rough/imaginary, I'll adjust everything after I've seen how the database looks (for example, I believe article id is pID?).*
+Also there's another endpoint that seems helpful: a list of fields. This way we could generate a legend, as well as give the app a central reference for looking up field colors.
+
+- `fields.js` - fetch all fields and their corresponding colors
 
 
-Questions:
-- Do fields have their own id?
-- Can PDFs be fetched by article id, or should their pdf url be part of the ajax response?
-- Should article reference lists be full article objects themselves? currently listed as full article object minus figures and references.
-	- In fact, on reflection, we definitely cannot include references inside references... that would recurse us into oblivion
-	- Perhaps fetching an article should be split into "fetch article" and "fetch references"? That could help with reusability / consistency in the code.
+#### Questions
+- Do fields have their own ID?
+- Can PDFs be fetched by article ID, or should their URL be part of the response?
+- Should article reference lists be full article objects themselves? Currently listed as full article object minus figures and references.
+	- Wait, we definitely cannot include references inside references... would recurse us into oblivion
+	- Perhaps fetching an article should be split into "fetch article" and "fetch references"? 
+		- This could help with reusability / consistency in the code
+		- Though, splitting across two endpoints would add some AJAX hairiness in the client
 
 
-Todo:
-- Authorship pages (paginated list of articles by author id, maybe also filtered by fields, keywords, etc?)
+#### Todo
+- Authorship pages (paginated list of articles by author ID, maybe also filtered by fields, keywords, etc?)
 	- Browsing by author could get interesting/complex, something to explore more.
 - Field complexities (field hierarchy? article's field composition percentages?)
