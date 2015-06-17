@@ -16,7 +16,7 @@ Also there's another endpoint that seems helpful: a list of fields. This way we 
 - `fields.js` - fetch all fields and their corresponding colors
 
 
-#### Questions
+#### Open questions
 - Do fields have their own ID?
 - Can PDFs be fetched by article ID, or should their URL be part of the response?
 - Should article reference lists be full article objects themselves? Currently listed as full article object minus figures and references.
@@ -26,7 +26,7 @@ Also there's another endpoint that seems helpful: a list of fields. This way we 
 		- Though, splitting across two endpoints would add some AJAX hairiness in the client
 
 
-#### Todo
+#### Todo/future
 - Authorship pages (paginated list of articles by author ID, maybe with optional filters?)
 	- Browsing by author could get interesting/complex, something to explore more.
 - Field complexities (field hierarchy? article's field composition percentages?)
