@@ -11,7 +11,7 @@ There's (roughly) 3 major Wikipedia API endpoints used in Wikitree. Our scholarl
 - `search.js` - fetch full search results
 
 
-Also there's another endpoint that seems helpful: a list of fields. This way we could generate a legend, as well as give the app a central reference for looking up field colors.
+Also there's another endpoint that seems helpful: a list of fields. This way we could generate a legend for the user, as well as give the app a central reference for looking up field colors.
 
 - `fields.js` - fetch all fields and their corresponding colors
 
