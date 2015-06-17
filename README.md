@@ -18,6 +18,7 @@ Also there's another endpoint that seems helpful: a list of fields. This way we 
 
 #### Open questions
 - Do fields have their own ID?
+- Would figures have their own objects? (ID, URL, caption, etc)
 - Can PDFs be fetched by article ID, or should their URL be part of the response?
 - Should article reference lists be full article objects themselves? Currently listed as full article object minus figures and references.
 	- Wait, no we can't include references inside references... would recurse into oblivion
