@@ -19,7 +19,7 @@ $.ajax({
  */
 
 var response = [
-	'Sugg',
+    'Sugg',
     'Suggestion',
     'Suggs (singer)',
     'Suggs',
