@@ -20,13 +20,13 @@ Also there's another endpoint that seems helpful: a list of fields. This way we 
 - Do fields have their own ID?
 - Can PDFs be fetched by article ID, or should their URL be part of the response?
 - Should article reference lists be full article objects themselves? Currently listed as full article object minus figures and references.
-	- Wait, we definitely cannot include references inside references... would recurse us into oblivion
+	- Wait, no we can't include references inside references... would recurse into oblivion
 	- Perhaps fetching an article should be split into "fetch article" and "fetch references"? 
 		- This could help with reusability / consistency in the code
 		- Though, splitting across two endpoints would add some AJAX hairiness in the client
 
 
 #### Todo
-- Authorship pages (paginated list of articles by author ID, maybe also filtered by fields, keywords, etc?)
+- Authorship pages (paginated list of articles by author ID, maybe with optional filters?)
 	- Browsing by author could get interesting/complex, something to explore more.
 - Field complexities (field hierarchy? article's field composition percentages?)
