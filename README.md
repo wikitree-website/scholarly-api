@@ -6,7 +6,7 @@
 
 There's (roughly) 3 major Wikipedia API endpoints used in Wikitree. Our scholarly API could also follow this pattern. Mock requests & responses are in the attached files.
 
-- `article.js` - fetch an article
+- `articles.js` - fetch an article
 - `titles.js` -  fetch titles for auto-complete
 - `search.js` - fetch full search results
 

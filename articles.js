@@ -1,5 +1,5 @@
 //
-// Article
+// Articles
 //  - send article title or ID
 //  - receive entire article object
 //
