@@ -1,8 +1,14 @@
+//
+// Fields of study
+//  - send (nothing special)
+//  - receive list of all fields and their colors
+//
+
+
 /**
- * Fields request
+ * Request
  */
 
-// gets all fields for corpus
 $.ajax({
     url: 'https://domain.com/api/fields',
     type: 'GET',
@@ -14,64 +20,65 @@ $.ajax({
 
 
 /**
- * Search response
+ * Response
  */
 
-// list of field objects
-var response = [
-    {
-        id: 'HJDK9283',
-        name: 'Botany',
-        color: 'chartreuse'
-    },
-    {
-        id: '',
-        name: '',
-        color: ''
-    },
-    {
-        id: '',
-        name: '',
-        color: ''
-    },
-    {
-        id: '',
-        name: '',
-        color: ''
-    },
-    {
-        id: '',
-        name: '',
-        color: ''
-    },
-    {
-        id: '',
-        name: '',
-        color: ''
-    },
-    {
-        id: '',
-        name: '',
-        color: ''
-    },
-    {
-        id: '',
-        name: '',
-        color: ''
-    },
-    {
-        id: '',
-        name: '',
-        color: ''
-    },
-    {
-        id: '',
-        name: '',
-        color: ''
-    },
-    {
-        id: '',
-        name: '',
-        color: ''
-    }
-];
+var response = {
+    fields: [
+        {
+            id: 'HJDK9283',
+            name: 'Botany',
+            color: '#A1C659'
+        },
+        {
+            id: '',
+            name: '',
+            color: ''
+        },
+        {
+            id: '',
+            name: '',
+            color: ''
+        },
+        {
+            id: '',
+            name: '',
+            color: ''
+        },
+        {
+            id: '',
+            name: '',
+            color: ''
+        },
+        {
+            id: '',
+            name: '',
+            color: ''
+        },
+        {
+            id: '',
+            name: '',
+            color: ''
+        },
+        {
+            id: '',
+            name: '',
+            color: ''
+        },
+        {
+            id: '',
+            name: '',
+            color: ''
+        },
+        {
+            id: '',
+            name: '',
+            color: ''
+        },
+        {
+            id: '',
+            name: '',
+            color: ''
+        }
+    ]
+};

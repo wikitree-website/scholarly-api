@@ -1,5 +1,12 @@
+//
+// Search for an article
+//  - send a search query
+//  - receive a list of results
+//
+
+
 /**
- * Search request
+ * Request
  */
 
 $.ajax({
@@ -16,71 +23,73 @@ $.ajax({
 
 
 /**
- * Search response
+ * Response
  */
 
 var response = {
-    totalhits: 4189,
-    results: [
-        {
-            relevance: 0.9,
-            article: {
-                id: '',
-                title: '',
-                abstract: '',
-                year: '',
-                field: '',
-                eigenfactor: 0.0,
-                authors: []
+    search: {
+        totalhits: 4189,
+        results: [
+            {
+                relevance: 0.9,
+                article: {
+                    id: '',
+                    title: '',
+                    abstract: '',
+                    year: '',
+                    field: '',
+                    eigenfactor: 0.0,
+                    authors: []
+                }
+            },
+            {
+                relevance: 0.8,
+                article: {
+                    id: '',
+                    title: '',
+                    abstract: '',
+                    year: '',
+                    field: '',
+                    eigenfactor: 0.0,
+                    authors: []
+                }
+            },
+            {
+                relevance: 0.7,
+                article: {
+                    id: '',
+                    title: '',
+                    abstract: '',
+                    year: '',
+                    field: '',
+                    eigenfactor: 0.0,
+                    authors: []
+                }
+            },
+            {
+                relevance: 0.7,
+                article: {
+                    id: '',
+                    title: '',
+                    abstract: '',
+                    year: '',
+                    field: '',
+                    eigenfactor: 0.0,
+                    authors: []
+                }
+            },
+            {
+                relevance: 0.6,
+                article: {
+                    id: '',
+                    title: '',
+                    abstract: '',
+                    year: '',
+                    field: '',
+                    eigenfactor: 0.0,
+                    authors: []
+                }
             }
-        },
-        {
-            relevance: 0.8,
-            article: {
-                id: '',
-                title: '',
-                abstract: '',
-                year: '',
-                field: '',
-                eigenfactor: 0.0,
-                authors: []
-            }
-        },
-        {
-            relevance: 0.7,
-            article: {
-                id: '',
-                title: '',
-                abstract: '',
-                year: '',
-                field: '',
-                eigenfactor: 0.0,
-                authors: []
-            }
-        },
-        {
-            relevance: 0.7,
-            article: {
-                id: '',
-                title: '',
-                abstract: '',
-                year: '',
-                field: '',
-                eigenfactor: 0.0,
-                authors: []
-            }
-        },
-        {
-            relevance: 0.6,
-            article: {
-                id: '',
-                title: '',
-                abstract: '',
-                year: '',
-                field: '',
-                eigenfactor: 0.0,
-                authors: []
-            }
-        }
-    ]
+        ]
+    }
 };
